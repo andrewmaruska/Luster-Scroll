@@ -30,6 +30,20 @@ span, article, footer, time, small {
   box-sizing: inherit;
   background: transparent; }
 
+  html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 ul {
   list-style: none; }
 
@@ -58,7 +72,7 @@ input[type="submit"] {
   clear: both; }
 
 html {
-  /* background: url(https://s3.amazonaws.com/pxco-dev/bkgd+copy.jpg) no-repeat center top fixed; */
+  background: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,27 +81,31 @@ html {
 
 .game-view {
   padding: 20px;
-  width: 550px;
+  width: 224px;
   align-items: center;
   justify-content: center;
   margin: auto; }
 
-.game-view h1 {
+h1 {
   font-family: aktiv-grotesk, sans-serif;
+  color: white;
   font-size: 60px;
   font-weight: 200;
   margin: auto;
+  padding-bottom: 50px;
   text-align: center; }
 
 .canvas-elements {
-  height: 350px;
-  width: 500px;
+  height: 98px;
+  width: 224px;
   background-color: #675747;
   position: relative;
-  border: 2px solid black;
-  margin: 20px; }
+  border: 10px solid white;
+  /* margin: 20px;  */
+}
 
 #budgie-game {
+  /* outline-color: white; */
   position: absolute;
   z-index: 3; }
 
@@ -99,13 +117,19 @@ html {
   position: absolute;
   z-index: 1; }
 
-.game-view p {
+ p {
   margin: auto;
   font-family: aktiv-grotesk, sans-serif;
+  color: white;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.5;
-  text-align: center; }
+  margin: auto;
+  text-align: center;
+  /* display: flex; */
+  justify-content: center;
+  padding-top:50px;
+ }
 
 .meet-the-maker {
   padding-top: 20px; }
